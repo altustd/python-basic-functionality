@@ -12,7 +12,7 @@ sum_result = int_num + float_num
 diff_result = float_num - int_num
 prod_result = int_num * float_num
 div_result = float_num / int_num
-floor_div_result = float_num // int_num
+floor_div_result = float_num // int_num #  Floor division: discards the decimal part
 mod_result = int_num % 4    # Remainder of division
 exp_result = int_num ** 2
 
