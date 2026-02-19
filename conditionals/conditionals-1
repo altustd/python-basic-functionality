@@ -1,0 +1,96 @@
+# conditionals-1.py
+# This script demonstrates various types of conditional statements in Python, including if statements, if-else statements, elif statements, nested if statements, ternary operators, logical operators, membership operators, identity operators, short-circuit evaluation, multiple conditions, and conditional expressions.   
+
+
+# If statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
+
+# If-else statement
+y = 3
+if y > 5:
+    print("y is greater than 5")    
+else:    print("y is not greater than 5")
+
+# Elif statement    
+z = 7
+if z > 10:
+    print("z is greater than 10")
+elif z > 5:    print("z is greater than 5 but not greater than 10")
+else:    print("z is not greater than 5") 
+      
+# Nested if statement
+a = 15
+if a > 10:
+    if a < 20:
+        print("a is between 10 and 20")
+    else:
+        print("a is greater than or equal to 20")   
+else:    print("a is less than or equal to 10") 
+
+# Ternary operator
+b = 8
+result = "b is even" if b % 2 == 0 else "b is odd"
+print(result)
+
+# Logical operators
+c = 12
+if c > 10 and c < 20:
+    print("c is between 10 and 20")
+d = 5
+if d < 10 or d > 20:
+    print("d is either less than 10 or greater than 20")
+
+# Membership operator
+my_list = [1, 2, 3, 4, 5]       
+if 3 in my_list:
+    print("3 is in the list")       
+if 6 not in my_list:
+    print("6 is not in the list")   
+
+# Identity operator
+e = [1, 2, 3]
+f = e
+if e is f:
+    print("e and f refer to the same object")
+g = [1, 2, 3]
+if e is not g:
+    print("e and g do not refer to the same object")    
+
+# Short-circuit evaluation
+h = 0
+if h != 0 and 10 / h > 1:
+    print("This will not be printed because of short-circuit evaluation")
+
+# Multiple conditions
+i = 25
+if i < 10:
+    print("i is less than 10")
+elif i < 20:
+    print("i is between 10 and 20")
+elif i < 30:
+    print("i is between 20 and 30")
+else:
+    print("i is 30 or greater")
+
+# Conditional expressions
+j = 5
+k = 10
+max_value = j if j > k else k
+print("The maximum value is:", max_value)
+
+# Nested conditional expressions
+l = 15
+m = 20
+n = 25
+max_value_nested = l if l > m and l > n else (m if m > n else n)
+print("The maximum value among l, m, and n is:", max_value_nested)  
+
+
+
+
+
+
+
+
